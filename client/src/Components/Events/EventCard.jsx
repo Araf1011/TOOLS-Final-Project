@@ -78,6 +78,7 @@ const EventCard = ({ event }) => {
                             {club.shortName}
                         </Link>
                     )}
+               
                 </div>
 
                 <div className="progress-bar-track mb-4">
@@ -87,19 +88,28 @@ const EventCard = ({ event }) => {
                 <div className="flex items-center justify-between mt-auto pt-3"
                     style={{ borderTop: '1px solid var(--border-color)' }}>
                     <div>
+                        
                         <div className="text-[10px] font-bold uppercase tracking-wider mb-0.5" style={{ color: 'var(--text-muted)' }}>
                             Fee
                         </div>
+                        
+                        
+                        
                         <div className="text-sm font-bold" style={{ color: 'var(--text-primary)' }}>
+                            
                             {isFree
-                                ? <span style={{ color: '#059669' }}>FREE</span>
+                                ? <span style={{ color: '#059669' }}> FREE </span>
                                 : `৳ ${price}`
                             }
                         </div>
                     </div>
+                    
+                    
                     <Link to={`/events/${_id}`} className="btn-premium px-4 py-2 text-xs rounded-lg">
                         View Details
+                    
                     </Link>
+                
                 </div>
             </div>
         </div>
