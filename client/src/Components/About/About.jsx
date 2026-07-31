@@ -17,7 +17,7 @@ const teamMembers = [
         color: '#0ea5e9',
     },
     {
-        name: 'Foyez Ahammed Nirob',
+        name: 'Foyez Ahammed',
         role: 'Student',
         image: 'https://ui-avatars.com/api/?name=Nusrat+Jahan&background=f59e0b&color=fff&size=128',
         bio: 'Managing communications and outreach to establish dynamic student partnerships.',
@@ -142,10 +142,12 @@ const About = () => {
                 <div className="section-container">
                     <div className="text-center mb-12">
                         <span className="section-badge mb-3 inline-flex">👥 Team</span>
+                        
                         <h2 className="text-2xl md:text-3xl font-extrabold"
                             style={{ color: 'var(--text-primary)', fontFamily: 'Space Grotesk, sans-serif' }}>
                             Our Organizing Committee
                         </h2>
+                        
                         <p className="text-sm mt-2" style={{ color: 'var(--text-muted)' }}>The dedicated team driving our events forward</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -157,9 +159,11 @@ const About = () => {
                                         style={{ outline: `3px solid ${m.color}40`, outlineOffset: '4px' }} />
                                 </div>
                                 <div>
+                                    
                                     <h3 className="font-bold text-base" style={{ color: 'var(--text-primary)', fontFamily: 'Space Grotesk, sans-serif' }}>
                                         {m.name}
                                     </h3>
+                                    
                                     <p className="text-xs font-semibold mt-0.5" style={{ color: m.color }}>{m.role}</p>
                                     <p className="text-xs mt-3 leading-relaxed" style={{ color: 'var(--text-muted)' }}>{m.bio}</p>
                                 </div>
