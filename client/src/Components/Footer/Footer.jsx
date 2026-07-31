@@ -113,6 +113,7 @@ const Footer = () => {
                                 Your university's official event management portal — where campus life comes alive.
                             </p>
 
+
                             <div className="footer-newsletter">
                                 <p className="footer-newsletter-label">Stay updated</p>
                                 <div className="footer-newsletter-row">
@@ -127,7 +128,6 @@ const Footer = () => {
                                     </button>
                                 </div>
                             </div>
-
                             <div className="footer-social-row">
                                 {socialLinks.map(({ icon, label, href }) => (
                                     <a key={label} href={href} aria-label={label} className="footer-social-icon">
