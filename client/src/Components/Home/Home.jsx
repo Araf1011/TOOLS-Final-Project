@@ -99,6 +99,8 @@ const Home = () => {
                             Discover academic seminars, workshops, campus fests, and sports competitions.
                             Register online, download your QR pass, and be part of campus life.
                         </p>
+
+
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link to="/events" className="btn-premium px-8 py-3 text-base rounded-xl font-semibold">
                                 Explore Events →
@@ -291,7 +293,7 @@ const Home = () => {
 
                     <div className="text-center">
                         <Link to="/clubs" className="btn-premium px-8 py-3 text-sm rounded-xl font-semibold inline-block">
-                            Explore All Clubs →
+                            Explore Clubs →
                         </Link>
                     </div>
                 </div>
@@ -308,14 +310,18 @@ const Home = () => {
                                 style={{ fontFamily: 'Space Grotesk, sans-serif', background: 'linear-gradient(90deg, #FFBE91, #FFDDB0, #CFEBFF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                                 Ready to Join Campus Life?
                             </h2>
+                            
                             <p style={{ color: 'rgba(255,252,225,0.75)', fontSize: '0.95rem', marginBottom: '2rem', maxWidth: '36rem', margin: '0 auto 2rem' }}>
                                 Create your account today and start registering for events instantly.
                             </p>
+                            
                             <div className="flex flex-wrap justify-center gap-4">
+                                
                                 <Link to="/register"
                                     className="font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-xl hover:-translate-y-1 btn-premium">
                                     Get Started Free
                                 </Link>
+                                
                                 <Link to="/events"
                                     className="px-8 py-3 rounded-xl text-sm font-semibold transition-all hover:-translate-y-1"
                                     style={{ background: 'rgba(207,235,255,0.10)', color: '#CFEBFF', border: '1px solid rgba(207,235,255,0.3)' }}>
