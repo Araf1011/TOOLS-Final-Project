@@ -26,6 +26,17 @@ IIUC EventEra is a modern, full-stack event management web application designed 
 
 ---
 
+## 👥 Behind The Web (Organizing Committee)
+
+| Team Member | Role(s) | Key Contributions |
+| :--- | :--- | :--- |
+| **MD AL Araf Hossain** | Frontend · Backend · Database | Full-stack development, UI design, REST APIs, and database architecture |
+| **Foyez Ahammed Nirob** | Frontend | Responsive UI components, user experience polish, and layout design |
+| **Sanayat Fahim** | Authentication | Firebase authentication flows, user authorization, and access management |
+| **Tahsin Kamal** | Backend | Server-side logic, API endpoints, and event registration processing |
+
+---
+
 ## 🛠️ Tech Stack & Technologies Used
 
 ### **Frontend (`/client`)**

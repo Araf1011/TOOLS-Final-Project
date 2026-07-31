@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../../Providers/AuthProvider';
 import API_URL from '../../config';
+import eventEraLogo from '../../assets/EVENTERA LOGO.jpeg';
 
 const Navigation = () => {
     const { user, logout } = useContext(AuthContext);
@@ -107,16 +108,17 @@ const Navigation = () => {
                 <div className="flex items-center justify-between h-16">
 
                     <Link to="/" className="flex items-center gap-2 flex-shrink-0" onClick={() => setMenuOpen(false)}>
-                        <div style={{
-                            width: 36, height: 36,
-                            borderRadius: '10px',
-                            background: 'linear-gradient(135deg, #FFBE91 0%, #FFDDB0 50%, #CFEBFF 100%)',
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            boxShadow: '0 4px 14px rgba(255,190,145,0.45)',
-                            flexShrink: 0,
-                        }}>
-                            <span style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 900, fontSize: '0.82rem', color: '#1a0800', letterSpacing: '-0.03em' }}>IE</span>
-                        </div>
+                        <img
+                            src={eventEraLogo}
+                            alt="IIUC EventEra Logo"
+                            style={{
+                                width: 36, height: 36,
+                                borderRadius: '10px',
+                                objectFit: 'cover',
+                                boxShadow: '0 4px 14px rgba(255,190,145,0.45)',
+                                flexShrink: 0,
+                            }}
+                        />
                         <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
                             <span style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 800, fontSize: '0.95rem', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>IIUC</span>
                             <span style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '0.82rem', background: 'linear-gradient(90deg, #FFBE91, #FFDDB0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', letterSpacing: '-0.01em' }}>EventEra</span>
